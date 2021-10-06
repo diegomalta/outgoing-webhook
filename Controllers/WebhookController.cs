@@ -12,10 +12,10 @@ namespace webhook.Controllers
 
         }
 
-        [HttpGet]
-        public IActionResult Get()
+        [HttpPost]
+        public IActionResult Post()
         {
-            return Ok(new { text = "Hello" });
+            return Ok(new { text = "Hello from the outside!" });
         }
         
     }
